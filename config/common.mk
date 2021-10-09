@@ -80,7 +80,12 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/stag/prebuilt/common/etc/permissions/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
 
-# Power whitelist
+
+# Enable one-handed mode
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.support_one_handed_mode=true
+
+# Power Whitelist
 PRODUCT_COPY_FILES += \
     vendor/stag/prebuilt/common/etc/permissions/stag-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/stag-power-whitelist.xml
 
@@ -155,3 +160,6 @@ ifeq ($(TARGET_USES_CARRIERSETTINGS),true)
 # CarrierSettings
 $(call inherit-product, vendor/stag/CarrierSettings/config.mk)
 endif
+
+# rro_overlays
+$(call inherit-product, vendor/stag/config/rro_overlays.mk)
