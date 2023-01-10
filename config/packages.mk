@@ -55,6 +55,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NavigationBarNoHintOverlay
 
+# DualTone QS
+PRODUCT_PACKAGES += \
+    DualToneQSOverlay
+
 #ifeq ($(TARGET_INCLUDE_LAWNCHAIR),true)
 #PRODUCT_PACKAGES += \
 #    Lawnchair
