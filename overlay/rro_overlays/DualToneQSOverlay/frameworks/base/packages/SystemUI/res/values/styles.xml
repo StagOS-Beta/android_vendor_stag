@@ -15,7 +15,7 @@
            xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
 
 
-    <style name="Theme.SystemUI.QuickSettings" parent="@*android:style/Theme.DeviceDefault.SystemUI">
+    <style name="Theme.SystemUI.QuickSettings" parent="@*android:style/Theme.DeviceDefault">
         <item name="lightIconTheme">@style/QSIconTheme</item>
         <item name="darkIconTheme">@style/QSIconTheme</item>
         <item name="android:colorError">@*android:color/error_color_material_light</item>
@@ -30,5 +30,10 @@
     <style name="QSCustomizeToolbar" parent="@*android:style/Widget.DeviceDefault.Toolbar">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
         <item name="android:elevation">10dp</item>
+    </style>
+
+    <style name="Theme.SystemUI.QuickSettings.Header">
+        <item name="lightIconTheme">@style/DualToneLightTheme</item>
+        <item name="darkIconTheme">@style/QSHeaderDarkTheme</item>
     </style>
 </resources>
